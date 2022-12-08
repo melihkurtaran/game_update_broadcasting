@@ -1,0 +1,8 @@
+{ "type": "update", "user": "ahmet", "timestamp": 105, "values": { "bar": "foo" }}
+{ "type": "update", "user": "melih", "timestamp": 100, "values": { "foo": "bar" }}
+{ "type": "make_friends", "user1": "melih", "user2": "ahmet" }
+{ "type": "update", "user": "melih", "timestamp": 99, "values": { "foo": "bar", "baz": "crux" }}
+{ "type": "make_friends", "user1": "ayca", "user2": "melih" }
+{ "type": "update", "user": "ayca", "timestamp": 103, "values": { "baz": "crux" }}
+{ "type": "update", "user": "ahmet", "timestamp": 101, "values": { "foo": "bar" }}
+{ "type": "update", "user": "ahmet", "timestamp": 99, "values": { "bar":"foo","foo": "bar","crux":"baz" }}

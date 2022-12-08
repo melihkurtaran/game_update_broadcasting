@@ -1,0 +1,4 @@
+{"broadcast":["ahmet"],"timestamp":99,"user":"melih","values":{"baz":"crux"}}
+{"broadcast":["melih"],"timestamp":103,"user":"ayca","values":{"baz":"crux"}}
+{"broadcast":["melih"],"timestamp":101,"user":"ahmet","values":{"foo":"bar"}}
+{"broadcast":["melih"],"timestamp":99,"user":"ahmet","values":{"crux":"baz"}}

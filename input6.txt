@@ -1,0 +1,12 @@
+{ "type": "del_friends", "user1": "ayca", "user2": "melih" }
+{ "type": "make_friends", "user1": "ayca", "user2": "melih" }
+{ "type": "update", "user": "ayca", "timestamp": 103, "values": { "baz": "crux" }}
+{ "type": "update", "user": "melih", "timestamp": 101, "values": { "foo": "bar" }}
+{ "type": "del_friends", "user1": "ayca", "user2": "melih" }
+{ "type": "make_friends", "user1": "ayca", "user2": "melih" }
+{ "type": "del_friends", "user1": "melih", "user2": "ayca" }
+{ "type": "update", "user": "ayca", "timestamp": 103, "values": { "boo": "cra" }}
+{ "type": "update", "user": "melih", "timestamp": 101, "values": { "far": "ram" }}
+{ "type": "make_friends", "user1": "melih", "user2": "ayca" }
+{ "type": "update", "user": "ayca", "timestamp": 103, "values": { "coo": "doa" }}
+{ "type": "update", "user": "melih", "timestamp": 101, "values": { "boa": "qua" }}

@@ -1,0 +1,5 @@
+{ "type": "update", "user": "melih", "timestamp": 100, "values": { "foo": "bar" }}
+{ "type": "make_friends", "user1": "melih", "user2": "ahmet" }
+{ "type": "update", "user": "melih", "timestamp": 99, "values": { "foo": "bar", "baz": "crux" }}
+{ "type": "del_friends", "user1": "melih", "user2": "ahmet" }
+{ "type": "update", "user": "ahmet", "timestamp": 101, "values": { "foo": "bar" }}

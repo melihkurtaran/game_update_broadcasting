@@ -1,0 +1,14 @@
+{ "type": "update", "user": "melih", "timestamp": 105, "values": { "level24": "passed"}}
+{ "type": "update", "user": "jade", "timestamp": 104, "values": { "weapon": "iceBall"}}
+{ "type": "make_friends", "user1": "jade", "user2": "melih" }
+{ "type": "update", "user": "jade", "timestamp": 103, "values": { "weapon": "fireBall","level8": "passed" }}
+{ "type": "update", "user": "melih", "timestamp": 103, "values": { "weapon": "iceBall","level25": "failed" }}
+{ "type": "del_friends", "user1": "jade", "user2": "melih" }
+{ "type": "make_friends", "user1": "melih", "user2": "ayca" }
+{ "type": "make_friends", "user1": "ahmet", "user2": "melih" }
+{ "type": "make_friends", "user1": "melih", "user2": "alex" }
+{ "type": "update", "user": "alex", "timestamp": 99, "values": { "level32": "failed","weapon": "death_sword" }}
+{ "type": "make_friends", "user1": "ahmet", "user2": "alex" }
+{ "type": "update", "user": "ahmet", "timestamp": 101, "values": { "level14": "passed" }}
+{ "type": "del_friends", "user1": "alex", "user2": "ahmet" }
+{ "type": "update", "user": "ahmet", "timestamp": 98, "values": { "level32": "failed","weapon": "death_sword" }}
