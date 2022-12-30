@@ -3,6 +3,14 @@ A broadcasting app that handles game updates
 
 PROBLEM 1:
 
+Explanation: 
+
+- This is a program that reads a JSON file containing different types of events and updates a friendship map and broadcast list accordingly. The main function reads the JSON file line by line and parses each line into a json object. It then checks the type of the event and calls the appropriate function to update the friendship map or broadcast list.
+- The makeFriends function takes in a json object representing a "make_friends" event and a reference to the friendship map. It creates a symmetric relationship between the two users specified in the event by adding them to each other's lists in the map. If either user does not have an entry in the map, a new list is created for them.
+- The deleteFriends function takes in a json object representing a "del_friends" event and a reference to the friendship map. It removes the symmetric relationship between the two users specified in the event by deleting them from each other's lists in the map. If either user's list becomes empty after the deletion, their entry is removed from the map.
+- The broadcast function takes in a json object representing an "update" event, a reference to the broadcast list, and a reference to the friendship map. It creates a new json object representing a broadcast message and adds it to the broadcast list. The broadcast message includes the user who sent the update, the timestamp of the update, and the updated values. The function also checks if the user has any friends in the friendship map and, if so, prints the broadcast message. If the update has already been broadcasted for the same user, the updated values are not included in the broadcast message.
+- The program makes use of the nlohmann::json library to parse and manipulate json objects. The map and list classes from the STL are also used to store the friendship relationships and broadcast messages.
+
 To run the test case use command "./problem1 inputName.txt".
 
 You can review the implementation in codeProblem1.cpp file.
