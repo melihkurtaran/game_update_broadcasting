@@ -31,6 +31,20 @@ input7: more complex example of testing if update of a value for a user affects 
 
 PROBLEM 2:
 
+This program is designed to process a large JSON file containing update events for multiple users. It utilizes multiple threads to efficiently read and parse the file, and updates global variables to store the latest update values for each user.
+
+The program makes use of the nlohmann::json library to parse and manipulate json objects, and the pthread library to create and manage multiple threads.
+
+Functionality:
+
+- The main function creates and launches multiple threads, each of which reads and processes a portion of the JSON file. The receiveUpdates function, which is called by each thread, reads and parses each line of the file and updates the global variables g_lastUpdateJSON, g_UserValue, and g_timeJSON with the latest update values for each user.
+
+- The g_lastUpdateJSON variable stores the latest update values for each user as a json object. The g_UserValue variable stores the update history for each user as a json object, with the keys being the timestamps of the updates and the values being the update values. The g_timeJSON variable stores the latest timestamp for each update value for each user, with the keys being a combination of the user name and the update value.
+
+- Access to the global variables is protected by a mutex, ensuring that updates to the variables are thread-safe.
+
+- Upon completion, the program prints the final values of the global variables to the console.
+
 To run the test case use command "./problem2 inputProblem2.txt". 
 
 It will both print the results and create a pretty JSON file as a result named as "output.json".
